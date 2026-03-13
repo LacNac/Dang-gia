@@ -6,6 +6,8 @@ body{
        display: flex;
        padding: 10px 30px 5px 30px;
        background-color: #adadad;
+       margin-right: auto;
+       gap: 20px;
 }
 
 #logo img{
@@ -13,21 +15,8 @@ body{
        height: 50px;
        border-radius: 50px;
 }
-
-#logo p{
+.wc{
        margin-left: auto;
-       font-size: 18px;
 }
 
-#login{
-       display: flex;
-       justify-content: end;
-       padding: 5px 30px 5px 30px;
-       gap: 15px;
-}
 
-#login a{
-       text-decoration: none;
-       color: black;
-
-}
