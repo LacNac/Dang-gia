@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+       Giảng viên 
+{% endblock %}
+
+{% block content %}
+       <table>
+              <tr>
+                     <th colspan="2">Tên Giảng Viên</th>
+              </tr>
+              <tr> 
+                     <td>thao</td>
+                     <td> <button type="submit"> Xem </button></td>
+              </tr>
+
+              {% for row in data %}
+              <tr>
+                     <td> {{ row[0] }}</td>
+                     <td> <button type="submit"> Xem </button></td>
+              </tr>
+              {% endfor %}
+       </table>
+{% endblock %}

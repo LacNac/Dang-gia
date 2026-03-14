@@ -1,13 +1,16 @@
 body{
        margin: 0px;
 }
-
+header{
+       position: sticky;
+}
 #logo{
        display: flex;
        padding: 10px 30px 5px 30px;
        background-color: #adadad;
        margin-right: auto;
        gap: 20px;
+       font-size: 18px;
 }
 
 #logo img{
@@ -20,3 +23,14 @@ body{
 }
 
 
+table{
+       width: 70%;
+       border: 1px solid;
+       margin: 50px auto;
+
+}
+
+table tr td button{
+       display: flex;
+       margin-left: auto;
+}
