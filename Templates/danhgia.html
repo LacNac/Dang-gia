@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="dg-div">
+    <table class="dg-table">
+        <thead class="dg-head">
+        <tr>
+            <th>Câu hỏi</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+        </tr>
+        </thead>
+        <tbody class="dg-body">
+        {% for cauhoi in data2 %}
+        <tr>
+            <td class="dg-cauhoi">{{ cauhoi[1] }}</td>
+          <td><input type="radio" name="{{ cauhoi[0] }}" value="1"></td>
+<td><input class="dg-cham" type="radio" name="{{ cauhoi[0] }}" value="2"></td>
+<td><input class="dg-cham" type="radio" name="{{ cauhoi[0] }}" value="3"></td>
+<td><input class="dg-cham" type="radio" name="{{ cauhoi[0] }}" value="4"></td>
+<td><input class="dg-cham" type="radio" name="{{ cauhoi[0] }}" value="5"></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+        <tfoot class="dg-submit">
+        <td><input type="submit" value="Lưu đánh giá"></td>
+        </tfoot>
+    </table>
+</div>
+
+{% endblock %}

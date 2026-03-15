@@ -1,0 +1,35 @@
+.dg-div {
+display: flex;
+background-color: gray;
+width: 70%;
+height: 680px;
+padding: 40px;
+margin: auto;
+overflow: auto;
+border-radius: 10px;
+}
+.dg-table {
+width: 100%;
+font-size: 20px;
+text-align: left;
+line-height: 60px;
+padding: 30px 10px 0 20px;
+border-collapse:separate;
+border-spacing:0 18px;
+color: white;
+}
+.dg-head {
+position: sticky;
+padding: 12px;
+text-align: center;
+font-weight: 600;
+font-size: 22px;
+}
+.dg-cauhoi {
+width: 60%;
+line-height: 1.5;
+}
+
+dg.submit {
+
+}

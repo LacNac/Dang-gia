@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="st-div">
+    <table class="st-table">
+
+        <thead class="st-head">
+        <tr>
+            <th>Mã học phần</th>
+            <th>Tên học phần</th>
+            <th>Giảng viên</th>
+            <th></th>
+        </tr>
+        </thead>
+
+        <tbody class="st-body">
+
+        {% for hp in data %}
+        <tr>
+
+            <td>{{ hp[0] }}</td>
+            <td>{{ hp[1] }}</td>
+            <td>{{ hp[3] }}</td>
+
+            <td class="st-button"><a href="{{ url_for('assess.danh_gia')}}"><button>Đánh giá</button></a></td>
+
+        </tr>
+        {% endfor %}
+
+        </tbody>
+
+    </table>
+</div>
+
+{% endblock %}

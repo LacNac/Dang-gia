@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>{% block title %} {% endblock %}</title>
+       <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'sinhvien.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'danhgia.css')}}">
+</head>
+<body>
+       <header>
+              <div id="logo">
+                     <img src="https://s.yimg.com/fz/api/res/1.2/9FsGW0wA7u6GgUpWj4hscQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD00MTI7cHhvZmY9NTA7cHlvZmY9MTAwO3E9ODA7c3M9MTt3PTM4OA--/https://i.pinimg.com/736x/c8/cc/68/c8cc6816a2448d0a03a5e46e932ce7a9.jpg" alt="Logo">
+                     <p>Đại học meo meo</p>
+                     <p class="wc">Chao {{Guest}}</p>                     
+              </div>
+           <div>
+               <ul>
+                   <li><a href="{{ url_for('list_sb.danh_sach') }}">Danh Sach</a></li>
+               </ul>
+           </div>
+
+
+       </header>
+       {% block content %}
+       {% endblock %}
+</body>
+</html>
