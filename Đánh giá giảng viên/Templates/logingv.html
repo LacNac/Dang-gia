@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Log in</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#c40000; /* nền đỏ */
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-gv{
+    background:white;
+    padding:40px;
+    width:350px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+/* logo */
+.logo{
+    width:120px;
+    margin-bottom:10px;
+}
+
+.login-title{
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.sub-title{
+    font-size:14px;
+    color:gray;
+    margin-bottom:25px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+input:focus{
+    border-color:#c40000;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    background:#c40000;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#a30000;
+}
+
+a{
+    text-decoration:none;
+    color:#c40000;
+    font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+<form action="/logingv" method="POST">
+    <div class="login-gv">
+
+        <!-- Logo -->
+        <img src="https://nct.neu.edu.vn/images/LogoNCT.png" class="logo">
+
+        <div class="login-title">Đăng nhập</div>
+        <div class="sub-title">Cổng thông tin đánh giá chất lượng giảng dạy và học tập</div>
+
+        <input type="text" placeholder="Tên tài khoản" name="username" >
+        <br><br>
+
+        <input type="password" placeholder="Mật khẩu" name="password">
+        <br><br>
+
+        <a href="/loginsv">Bạn là sinh viên?</a>
+        <br><br>
+        <button type="submit">Đăng nhập</button>
+    </div>
+</form>
+</body>
+</html>
