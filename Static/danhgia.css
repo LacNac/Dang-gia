@@ -1,35 +1,70 @@
-.dg-div {
-display: flex;
-background-color: gray;
-width: 70%;
-height: 680px;
-padding: 40px;
-margin: auto;
-overflow: auto;
-border-radius: 10px;
+.dg-div{
+    width: 800px;
+    height: 90%;
+    margin: 40px auto;
+    background: #7f7f7f;
+    padding: 50px;
+    border-radius: 12px;
 }
-.dg-table {
-width: 100%;
-font-size: 20px;
-text-align: left;
-line-height: 60px;
-padding: 30px 10px 0 20px;
-border-collapse:separate;
-border-spacing:0 18px;
-color: white;
+
+.dg-table{
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
 }
-.dg-head {
-position: sticky;
-padding: 12px;
+
+.dg-head th{
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 22px;
+}
+
+.dg-head th:first-child{
+    text-align: center;
+}
+
+.dg-body td{
+    padding: 14px 0;
+}
+
+.dg-cauhoi{
+    width: 60%;
+    text-align: left;
+    padding-right: 30px;
+    line-height: 2;
+    font-size: 20px;
+}
+
+.dg-body td:not(.dg-cauhoi){
+    width: 50px;
+    text-align: center;
+}
+.dg-body tr{
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.dg-chan{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.dg-body tr:hover{
+    background: rgba(255,255,255,0.2);
+}
+.dg-submit input{
+width: 150px;
+height: 50px;
+margin: 50px 20px 20px 0px;
+border: none;
+border-radius: 6px;
+background: white;
+cursor: pointer;
+float: right;
 text-align: center;
-font-weight: 600;
-font-size: 22px;
-}
-.dg-cauhoi {
-width: 60%;
-line-height: 1.5;
+font-size: 20px;
+font-family: "Times New Roman", Times, serif;
 }
 
-dg.submit {
-
+.dg-submit input:hover{
+    background: #e6e6e6;
 }

@@ -18,21 +18,22 @@ color: white;
 }
 .st-head {
 position: sticky;
-padding: 12px;
 text-align: left;
-font-weight: 600;
-font-size: 22px;
+font-weight: bold;
+font-size: 21px;
+}
+.st-head th{
+padding-left: 9px;
 }
 .st-table td{
 padding:12px;
 }
 .st-table tr{
-border-bottom: 1px solid #ddd;
+border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 .st-table tbody tr:hover{
-    background:#f0f0f0;
+    background: rgba(255,255,255,0.08);
 }
-
 
 .st-table th:nth-child(1),
 .st-table td:nth-child(1){
@@ -54,18 +55,14 @@ border-bottom: 1px solid #ddd;
     width:100px;
     text-align:center;
 }
-
-.st-button button{
-    background:#4CAF50;
-    color:white;
-    border:none;
-    padding:6px 12px;
-    border-radius:5px;
-    cursor:pointer;
-    font-size:14px;
+.st-button{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.2s;
 }
 
-.st-button button:hover{
-    background:#3d8b40;
+.st-button:hover{
+    color: #ffcc00;
+    text-decoration: underline;
 }
-
