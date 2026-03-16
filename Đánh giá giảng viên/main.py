@@ -2,13 +2,17 @@ from flask import (Flask, render_template,
                    request, redirect,
                    session, url_for, current_app)
 import sqlite3
-from giangvien1 import gv_bp
 import os
-
+from giangvien1 import gv_bp
+from assess import assess_bp
+from list_sb import list_sb_bp
 
 app = Flask(__name__)
-
 data = 'sinhvien.db'
+
+# Đăng ký Blueprint
+app.register_blueprint(list_sb_bp)
+app.register_blueprint(assess_bp)
 app.register_blueprint(gv_bp, url_prefix='/giang_vien')
 app.secret_key = 'felix_pham'
 
@@ -26,7 +30,7 @@ def loginsv():
         cur = conn.cursor()
 
         cur.execute(
-            "SELECT * FROM SinhVien WHERE user = ? AND password = ?",
+            "SELECT * FROM SinhVien WHERE username = ? AND password = ?",
             (username, password)
         )
 
@@ -35,11 +39,11 @@ def loginsv():
         if sv:
             session['ss_user'] = username
             session['role'] = 'sinhvien'
-            return redirect(url_for('sinhvien_home'))
+            return redirect(url_for('list_sb.danh_sach'))
 
-        return "Sai tài khoản hoặc mật khẩu"
+        return render_template("loginsv.html", hu = "Sai tên đăng nhập hoặc mật khẩu")
 
-    return render_template("loginsv.html")
+    return render_template("loginsv.html", hu = None)
 
 @app.route('/logingv', methods=['GET','POST'])
 def logingv():
