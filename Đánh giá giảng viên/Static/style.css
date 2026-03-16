@@ -8,6 +8,7 @@ header{
 header a{
        text-decoration: none;
        color: black;
+       justify-content: end;
 }
 #logo{
        display: flex;
@@ -22,6 +23,11 @@ header a{
        width: 50px;
        height: 50px;
        border-radius: 50px;
+}
+
+#logo a{
+       margin-left: auto;
+       margin-top: 20px;
 }
 .wc{
        margin-left: auto;
@@ -66,7 +72,20 @@ header a{
     display:grid;
     grid-template-columns: 2fr 1fr 1fr;
     align-items:center;
-    margin:15px 0;
+    margin:15px 0;    
+    padding: 10px;
+}
+
+.row a{
+       text-decoration: none;
+       color: black;
+       border: 1px solid black;
+       border-radius: 10px;
+       padding: 10px;
+}
+
+.row a:hover{
+       background-color: #cecece;
 }
 
 .header{
@@ -90,9 +109,22 @@ header a{
        margin-top: 10px;
 }
 
-.bao-cao a{
-       display: block;
-       text-align: right;
-       text-decoration: none;
-       margin-top: 10px;
+.link-tinh{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
 }
+
+.link-tinh a{
+       text-decoration: none;
+       color: black;
+       border: 1px solid black;
+       padding: 10px;
+       border-radius: 10px;
+}
+
+.link-tinh a:hover{
+       background-color: #cecece;
+}
+
