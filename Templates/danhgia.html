@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="dg-div">
+    <form>
     <table class="dg-table">
         <thead class="dg-head">
         <tr>
@@ -16,11 +17,11 @@
         {% for cauhoi in data2 %}
         <tr>
             <td class="dg-cauhoi">{{ cauhoi[1] }}</td>
-          <td><input type="radio" name="{{ cauhoi[0] }}" value="1"></td>
-<td><input class="dg-cham" type="radio" name="{{ cauhoi[0] }}" value="2"></td>
-<td><input class="dg-cham" type="radio" name="{{ cauhoi[0] }}" value="3"></td>
-<td><input class="dg-cham" type="radio" name="{{ cauhoi[0] }}" value="4"></td>
-<td><input class="dg-cham" type="radio" name="{{ cauhoi[0] }}" value="5"></td>
+          <td><input type="radio" name="cau_{{ cauhoi[0] }}" value="1"></td>
+<td><input class="dg-cham" type="radio" name="cau_{{ cauhoi[0] }}" value="2"></td>
+<td><input class="dg-cham" type="radio" name="cau_{{ cauhoi[0] }}" value="3"></td>
+<td><input class="dg-cham" type="radio" name="cau_{{ cauhoi[0] }}" value="4"></td>
+<td><input class="dg-cham" type="radio" name="cau_{{ cauhoi[0] }}" value="5"></td>
         </tr>
         {% endfor %}
         </tbody>
@@ -28,6 +29,7 @@
         <td><input type="submit" value="Lưu đánh giá"></td>
         </tfoot>
     </table>
+    </form>
 </div>
 
 {% endblock %}
