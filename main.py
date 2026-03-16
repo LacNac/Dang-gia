@@ -4,10 +4,11 @@ from list_sb import list_sb_bp
 
 app = Flask(__name__)
 
+# Đăng ký Blueprint
+app.register_blueprint(list_sb_bp)
+app.register_blueprint(assess_bp)
+
 def home():
-    # Đăng ký Blueprint
-    app.register_blueprint(list_sb_bp)
-    app.register_blueprint(assess_bp)
     @app.route('/')
     def index():
         return render_template("base.html")

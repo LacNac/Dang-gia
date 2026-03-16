@@ -22,7 +22,7 @@
             <td>{{ hp[1] }}</td>
             <td>{{ hp[3] }}</td>
 
-            <td class="st-button"><a href="{{ url_for('assess.danh_gia', ma_hoc_phan=hp[0]) }}"><button>Đánh giá</button></a></td>
+            <td><a class="st-button" href="{{ url_for('assess.danh_gia', ma_hoc_phan=hp[0]) }}">Đánh giá</a></td>
 
         </tr>
         {% endfor %}

@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="dg-div">
-    <form>
+    <form method="POST">
+        <input type="hidden" name="ma_hoc_phan" value="{{ ma_hp }}">
     <table class="dg-table">
         <thead class="dg-head">
         <tr>
