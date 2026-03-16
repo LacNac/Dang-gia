@@ -39,6 +39,7 @@ def loginsv():
         if sv:
             session['ss_user'] = username
             session['role'] = 'sinhvien'
+            session['ma_sinh_vien'] = sv[0]
             return redirect(url_for('list_sb.danh_sach'))
 
         return render_template("loginsv.html", hu = "Sai tên đăng nhập hoặc mật khẩu")
@@ -59,3 +60,4 @@ def logingv():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
