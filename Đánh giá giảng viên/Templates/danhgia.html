@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="dg-div">
+
+<form method="POST">
+
+<input type="hidden" name="ma_hoc_phan" value="{{ ma_hp }}">
+
+<table class="dg-table">
+
+<thead class="dg-head">
+<tr>
+<th>Câu hỏi</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr>
+</thead>
+
+<tbody class="dg-body">
+
+{% for cauhoi in data2 %}
+<tr>
+
+<td class="dg-cauhoi">
+{{ cauhoi[1] }}
+</td>
+
+<td>
+<label>
+<input type="radio" name="cau_{{ cauhoi[0] }}" value="1" required>
+</label>
+</td>
+
+<td>
+<label>
+<input type="radio" name="cau_{{ cauhoi[0] }}" value="2">
+</label>
+</td>
+
+<td>
+<label>
+<input type="radio" name="cau_{{ cauhoi[0] }}" value="3">
+</label>
+</td>
+
+<td>
+<label>
+<input type="radio" name="cau_{{ cauhoi[0] }}" value="4">
+</label>
+</td>
+
+<td>
+<label>
+<input type="radio" name="cau_{{ cauhoi[0] }}" value="5">
+</label>
+</td>
+
+</tr>
+{% endfor %}
+
+</tbody>
+
+<tfoot class="dg-submit">
+<tr>
+<td colspan="6">
+<input type="submit" value="Lưu đánh giá">
+</td>
+</tr>
+</tfoot>
+
+</table>
+
+</form>
+
+</div>
+{% endblock %}

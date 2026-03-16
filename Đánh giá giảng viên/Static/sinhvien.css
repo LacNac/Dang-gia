@@ -1,0 +1,68 @@
+.st-div {
+background-color: gray;
+width: 70%;
+height: 680px;
+padding: 40px;
+margin: 40px auto;
+overflow: auto;
+border-radius: 10px;
+}
+.st-table {
+width: 100%;
+font-size: 20px;
+text-align: left;
+line-height: 60px;
+padding: 30px 10px 0 20px;
+border-collapse: collapse;
+color: white;
+}
+.st-head {
+position: sticky;
+text-align: left;
+font-weight: bold;
+font-size: 21px;
+}
+.st-head th{
+padding-left: 9px;
+}
+.st-table td{
+padding:12px;
+}
+.st-table tr{
+border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.st-table tbody tr:hover{
+    background: rgba(255,255,255,0.08);
+}
+
+.st-table th:nth-child(1),
+.st-table td:nth-child(1){
+    width:150px;
+}
+
+.st-table th:nth-child(2),
+.st-table td:nth-child(2){
+    width:250px;
+}
+
+.st-table th:nth-child(3),
+.st-table td:nth-child(3){
+    width:200px;
+}
+
+.st-table th:nth-child(4),
+.st-table td:nth-child(4){
+    width:100px;
+    text-align:center;
+}
+.st-button{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.st-button:hover{
+    color: #ffcc00;
+    text-decoration: underline;
+}
