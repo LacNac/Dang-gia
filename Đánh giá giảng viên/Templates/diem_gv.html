@@ -2,10 +2,10 @@
 
 {% block content2 %}
 
-<div class="row header">
-    <div>Tên học phần</div>
-    <div>Điểm trung bình</div>
-    <div>In báo cáo</div>
+<div class="row" >
+    <div><b>Tên học phần</b></div>
+    <div><b>Điểm trung bình</b></div>
+    <div><b>In báo cáo</b></div>
 </div>
 
 {% for gv in dataa %}
@@ -16,6 +16,7 @@
 
     <div>{{ gv[8] }}</div>
     <div>
+
         <a href="{{ url_for('gv.bao_cao', ten_giang_vien=gv[1]) }}">In báo cáo</a>
     </div>
 

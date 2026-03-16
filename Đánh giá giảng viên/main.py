@@ -43,7 +43,7 @@ def loginsv():
 
         return render_template("loginsv.html", hu = "Sai tên đăng nhập hoặc mật khẩu")
 
-    return render_template("loginsv.html", hu = None)
+    return render_template("loginsv.html")
 
 @app.route('/logingv', methods=['GET','POST'])
 def logingv():

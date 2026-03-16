@@ -15,9 +15,11 @@
               <div class="t1"><b>Phương pháp giảng dạy của giảng viên giúp sinh viên hiểu bài tốt hơn:</b> {{ data[0]["diem_cau_4"]}}</div>
               <div class="t1"><b>Giảng viên tạo môi trường học tập tích cực và khuyến khích sinh viên tham gia thảo luận:</b> {{ data[0]["diem_cau_5"]}}</div>
               <div class="t1"><b>Điểm đánh giá trung bình:</b> {{ data[0]["diem_trung_binh"] }}</div>
-              <a href="{{ url_for('gv.xuat_word', ten_giang_vien=data[0]['ten_giang_vien']) }}">
-                     <button>Tải báo cáo Word</button>
-              </a>
+              <div class="link-tinh">
+                     <a href="{{ url_for('gv.giang_vien')}}"> Quay về</a>
+                     <a href="{{ url_for('gv.xuat_word', ten_giang_vien=data[0]['ten_giang_vien']) }}">Tải báo cáo Word</a>
+
+              </div>
 
        </div>
 {% endblock %}

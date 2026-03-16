@@ -26,12 +26,12 @@ def danh_gia():
 
         cursor2.execute("""
             UPDATE DiemTrungBinh
-            SET diem_cau_1 = ?,
-                diem_cau_2 = ?,
-                diem_cau_3 = ?,
-                diem_cau_4 = ?,
-                diem_cau_5 = ?,
-                diem_trung_binh = ?
+            SET diem_cau_1 = (? + diem_cau_1)/2,
+                diem_cau_2 = (? + diem_cau_2)/2,
+                diem_cau_3 = (? + diem_cau_3)/2,
+                diem_cau_4 = (? + diem_cau_4)/2,
+                diem_cau_5 = (? + diem_cau_5)/2,
+                diem_trung_binh = (? + diem_trung_binh)/2
             WHERE ma_hoc_phan = ?
         """, (diem1, diem2, diem3, diem4, diem5, diem_tb, ma_hp))
 
