@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, redirect
 import sqlite3
 
 from . import assess_bp
@@ -36,6 +36,7 @@ def danh_gia():
         """, (diem1, diem2, diem3, diem4, diem5, diem_tb, ma_hp))
 
         conn2.commit()
+        return redirect("/list_sb")
         
     # Khi bấm đánh giá
     ma_hp = request.args.get('ma_hoc_phan')
