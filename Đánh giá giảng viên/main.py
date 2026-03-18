@@ -52,8 +52,8 @@ def logingv():
 
         username = request.form['username']
         password = request.form['password']
-        session['ss_user'] = username
-        name = session['ss_user']
+        if username != "gv" and password != "1":
+            return render_template('logingv.html', hu = "Sai tên đăng nhập hoặc mật khẩu")
         return redirect(url_for('gv.giang_vien'))
 
     return render_template('logingv.html')
