@@ -1,0 +1,145 @@
+body{
+       margin: 0px;
+}
+header{
+       top: 0;
+       position: sticky;
+}
+header a{
+       text-decoration: none;
+       color: black;
+       justify-content: end;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #adadad;
+    gap: 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ba-title {
+    font-size: 25px;
+    font-family: "Arial";
+    font-weight: bold;
+}
+
+.ba-log-out {
+    margin-left: auto; /* đẩy sang phải */
+}
+
+.ba-log-out button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+.wc{
+       margin-left: auto;
+}
+.container{
+       display: flex;
+}
+
+.left{
+       border: 1px;
+       width: 200px;
+       height: 89vh;
+       text-align: center;
+       overflow-y: auto;
+
+       
+}
+.left p{
+       margin: 0;
+       padding: 20px;
+       top: 0px;
+       background-color: #adadad;
+       position: sticky;
+}
+
+.left a{
+       display: block;
+       text-decoration: none; 
+       padding: 20px;       
+       color: black;  
+}
+
+.left a:hover{
+       background-color: #adadad;
+}
+.right{
+    width:70%;
+    margin: 0px auto;
+}
+
+.row{
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items:center;
+    margin:15px 0;    
+    padding: 10px;
+}
+
+.row a{
+       text-decoration: none;
+       color: black;
+       border: 1px solid black;
+       border-radius: 10px;
+       padding: 10px;
+}
+
+.row a:hover{
+       background-color: #cecece;
+}
+
+.header{
+    font-weight:bold;
+}
+
+.bao-cao{
+       top: 10px;
+       width: 60%;
+       margin: auto;
+       border: 1px solid black;
+       padding: 30px;
+}
+
+.Tieu-de{
+       text-align: center;
+       margin: 0 0 30px 0;
+}
+
+.t1{
+       margin-top: 10px;
+}
+
+.link-tinh{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+}
+
+.link-tinh a{
+       text-decoration: none;
+       color: black;
+       border: 1px solid black;
+       padding: 10px;
+       border-radius: 10px;
+}
+
+.link-tinh a:hover{
+       background-color: #cecece;
+}
+

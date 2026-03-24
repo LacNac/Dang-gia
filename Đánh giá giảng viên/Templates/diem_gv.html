@@ -1,0 +1,26 @@
+{% extends "giang_vien1.html" %}
+
+{% block content2 %}
+
+<div class="row">
+    <div><b>Tên học phần</b></div>
+    <div><b>Điểm trung bình</b></div>
+    <div><b>In báo cáo</b></div>
+</div>
+
+{% for gv in dataa %}
+
+<div class="row">
+
+    <div>{{ gv[9] }}</div>
+
+    <div>{{ gv[8] }}</div>
+    <div>
+        <a href="{{ url_for('gv.bao_cao', ten_giang_vien=gv[1]) }}">In báo cáo</a>
+    </div>
+
+</div>
+
+{% endfor %}
+
+{% endblock %}

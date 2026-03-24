@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="left">
+        <p><b>Tên giảng viên</b></p>
+
+        {% for gv in data %}
+        <a href="{{ url_for('gv.chitiet', ten_giang_vien=gv[0]) }}" class="ten-giang-vien">
+            {{ gv[0] }}
+        </a>
+        {% endfor %}
+    </div>
+
+
+    <div class="right">
+        {% block content2 %}
+        {% endblock %}
+    </div>
+
+</div>
+
+{% endblock %}

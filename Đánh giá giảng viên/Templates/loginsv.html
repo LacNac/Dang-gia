@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Log in</title>
+
+    <style>
+
+        body{
+            margin:0;
+            padding:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background:#cecece; /* nền đỏ */
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .login-gv{
+            background:white;
+            padding:40px;
+            width:350px;
+            border-radius:10px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+            text-align:center;
+        }
+        img{
+               width: 100px;
+               border-radius: 100px;
+
+        }
+        /* logo */
+        .logo{
+            width:120px;
+            margin-bottom:10px;
+        }
+
+        .login-title{
+            font-size:24px;
+            font-weight:bold;
+            margin-bottom:5px;
+        }
+
+        .sub-title{
+            font-size:14px;
+            color:gray;
+            margin-bottom:25px;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            border-radius:5px;
+            border:1px solid #ccc;
+            outline:none;
+        }
+
+        input:focus{
+            border-color:#bebebe;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            border:none;
+            border-radius:5px;
+            background:#4a4949;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#4a4a4a;
+        }
+
+        a{
+            text-decoration:none;
+            color:#282828;
+            font-size:14px;
+        }
+
+    </style>
+</head>
+
+<body>
+<form action="/loginsv" method="POST">
+    <div class="login-gv">
+
+        <!-- Logo -->
+        <img src="https://s.yimg.com/fz/api/res/1.2/9FsGW0wA7u6GgUpWj4hscQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD00MTI7cHhvZmY9NTA7cHlvZmY9MTAwO3E9ODA7c3M9MTt3PTM4OA--/https://i.pinimg.com/736x/c8/cc/68/c8cc6816a2448d0a03a5e46e932ce7a9.jpg"
+             class="logo">
+
+        <div class="login-title">Đăng nhập</div>
+        <div class="sub-title">Sinh viên</div>
+
+        <input type="text" placeholder="Tên tài khoản" name="username">
+        <br><br>
+
+        <input type="password" placeholder="Mật khẩu" name="password">
+        <br><br>
+        <p>{{ hu }}</p>
+        <a href="/logingv">Bạn là giảng viên?</a>
+        <br><br>
+        <button type="submit">Đăng nhập</button>
+    </div>
+</form>
+</body>
+</html>
